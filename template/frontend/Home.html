@@ -1,0 +1,68 @@
+{% extends 'frontend/base.html' %}
+{% block title %}Home{% endblock %}
+{% block  content %}
+<body>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'Home' %}" class="text-dark">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'bread' %}">Bread</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cake' %}">Cake</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cookies' %}">Cookies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+  </body>
+<div class="jumbotron text-center" style="background-color:#cc9966;">
+    <h1 style="font-size:50px;"><b>My world of sweets</b></h1>
+    <p style="font-size:30px;"> ยินดีต้อนรับเข้าสู่โลกแห่งขนมหวาน<i class="fas fa-heart"></i></p>
+  
+  </div>  
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 class="text-light"><b>BREAD</b></h3>
+      <p class="text-light">ขนมปังอบสไตล์ฝรั่งเศษมีไส้และหน้าให้เลือกหลากหลายเสิร์ฟกับซอสหลายรสชาติไม่ว่าจะเป็นรสสตอรี่เบอร์รี่,ส้ม ทานคู่กับขนมปัง</p>
+      <p class="text-light">รสชาติอร่อยกลมกล่อม หอม หวาน มัน กำลังดี อร่อยอย่าบอกใครเลยต้องมาลองแล้วไหมค๊าบ:)</p>
+    
+      <img src="static/img/breads.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="200"> 
+    
+    </div>
+
+    <div class="col-sm-4">
+      <h3 class="text-light"><b>CAKE</b></h3>
+     
+      <p class="text-light">เค้กแสนอร่อย หอม หวาน มัน เป็นรสชาติที่อร่อยที่ทุกคนต้องได้ลิ้มลอง มีให้เลือกหลายหลายแบบหลากหลายหน้า และยังมีเค้กแต่งงาน วันเกิด และยังสามารถแต่งหน้าเองได้ด้วย</p>
+       <p class="text-light">ต้องมาชิมกันแล้วไหมค่าา</p>
+
+      <img src="static/img/cake2.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="200"> 
+
+    </div>
+
+    <div class="col-sm-4">
+      <h3 class="text-light"><b>COOKIES</b></h3>        
+      <p class="text-light">คุกกี้ต้นตำรับจากเบลเยี่ยมแท้มีทั้งหน้าฟิล์มและหน้ากรอบและอีกหลากหลายหน้ามีทั้งรสช็อคโกแล็ต รสวานิลา รสธัญพืชและอีกหลากหลายรสให้เลือกซอฟต์เสิร์ฟเนื้อละมุนลิ้น หอม หวานมันกำลังดี เอาใจคนรักสุขภาพ อร่อยขนาดนี้ต้องมาลองแล้วนะคะทุกคน^^</p>
+      
+      <img src="static/img/cookies.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="200"> 
+
+    </div>
+  </div>
+
+  
+</div>
+</body>
+
+{% endblock  %}

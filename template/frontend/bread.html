@@ -1,0 +1,82 @@
+{% extends 'frontend/base.html' %}
+{% block title2 %}Home{% endblock %}
+{% block  content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'Home' %}" class="text-dark">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'bread' %}">Bread</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cake' %}">Cake</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cookies' %}">Cookies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2  class="text-light " style="font-size:50px;"><b>BREAD</b></h2>
+  <p class="text-light" style="font-size:20px;">ขนมปังอบสไตล์ฝรั่งเศษมีไส้และหน้าให้เลือกหลากหลายเสิร์ฟกับซอสหลายรสชาติไม่ว่าจะเป็นรสสตอรี่เบอร์รี่,ส้ม ทานคู่กับขนมปัง</p>
+  <p class="text-light" style="font-size:20px;">รสชาติอร่อยกลมกล่อม หอม หวาน มัน กำลังดี อร่อยอย่าบอกใครเลยต้องมาลองแล้วไหมค๊าบ:)</p>
+  <p class="text-light" style="font-size:20px;">welcome to bread</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="static/img/bread1.jpg" target="_blank">
+          <img src="static/img/bread1.jpg" alt="bread1" style="width:100%">
+          <div class="caption">
+            <p>price 1/35 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="static/img/bread2.jpg" target="_blank">
+          <img src="static/img/bread2.jpg" alt="bread2" style="width:100%">
+          <div class="caption">
+            <p>price 1/35 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/bread3.jpg" target="_blank">
+          <img src="static/img/bread3.jpg" alt="bread3" style="width:100%">
+         
+          <div class="caption">
+            <p>price 1/35 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock  %}
+

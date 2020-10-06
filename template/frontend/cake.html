@@ -1,0 +1,82 @@
+{% extends 'frontend/base.html' %}
+{% block title2 %}Home{% endblock %}
+{% block  content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'Home' %}" class="text-dark">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'bread' %}">Bread</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cake' %}">Cake</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cookies' %}">Cookies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2  class="text-light" style="font-size:50px;"><b>CAKE</b></h2>
+  <p class="text-light" style="font-size:20px;">เค้กแสนอร่อย หอม หวาน มัน เป็นรสชาติที่อร่อยที่ทุกคนต้องได้ลิ้มลอง</p>
+  <p class="text-light" style="font-size:20px;">มีให้เลือกหลายหลายแบบหลากหลายหน้า และยังมีเค้กแต่งงาน วันเกิด และยังสามารถแต่งหน้าเองได้ด้วย</p>
+   <p class="text-light" style="font-size:20px;">ต้องมาชิมกันแล้วไหมค่าา</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="static/img/cake3.jpg" target="_blank">
+          <img src="static/img/cake3.jpg" alt="cake3" style="width:100%">
+          <div class="caption">
+            <p>price 1/55 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="static/img/cake4.jpg" target="_blank">
+          <img src="static/img/cake4.jpg" alt="cake4" style="width:100%">
+          <div class="caption">
+            <p>price 1/35 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/cake5.jpg" target="_blank">
+          <img src="static/img/cake5.jpg" alt="cake5" style="width:100%">
+         
+          <div class="caption">
+            <p>price 1 pond / 200 Bath</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock  %}
+

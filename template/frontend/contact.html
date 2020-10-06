@@ -1,0 +1,62 @@
+{% extends 'frontend/base.html' %}
+{% block title2 %}Home{% endblock %}
+{% block  content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'Home' %}" class="text-dark">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'bread' %}">Bread</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cake' %}">Cake</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'cookies' %}">Cookies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+  </div>
+</nav>
+
+<div class="jumbotron" style="padding=30;background-color: #cc9966;">
+    <h1><b>CONTACT</b></h1>
+    <table>
+      <tr style="margin-left:25%;padding:160px 100px;">
+        <td style="margin-left:25%;padding:10px 60px;"><img src="static/img/Call.jpg" class="img-circle"
+            alt="Cinque Terre" width="30" height="30"><span class="sr-only">(current)</span> 098-705-0657</td>
+        <td style="margin-left:25%;padding:10px 60px;"><img src="static/img/massage.jpg" class="img-circle"
+            alt="Cinque Terre" width="30" height="30"><span class="sr-only">(current)</span>61011408@kmitl.ac.th</td>
+      </tr>
+    </table>
+    <p style="margin-left:60"><b>Facebook</b> : My world of sweets</p>
+    <p style="margin-left:60"><b>IG </b>: My world of sweets</p>
+    <p style="margin-left:60"><b>Line </b>: My world of sweets</p>
+    <p style="margin-left:60"><b>Open 08:00 am.- 20:00 pm.<b></p>
+    <p style="margin-left:60"> หอพักนักศึกษา สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง เลขที่ 1 ซอย ฉลองกรุง 1 แขวง
+      ลาดกระบัง เขตลาดกระบัง กรุงเทพมหานคร 10520</p>
+  </div>
+</div>
+
+</body>
+</html>
+{% endblock  %}
+
+
+  
